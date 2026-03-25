@@ -8,7 +8,10 @@ This is a personal notes repository (written in Chinese) documenting what to do 
 
 ## Structure
 
-- `README.md` — the main note file covering: DD scripts, personal shell scripts, TCP tuning, SSH key management, and nftables firewall setup.
+- `README.md` — English-only VPS setup guide
+- `GUIDE.md` — Bilingual (English + Chinese) VPS setup guide
+- `GUIDE_CN.md` — Chinese-only VPS setup guide
+- `setup_pubkey.sh` — One-click script to add SSH public key to `authorized_keys`
 
 ## External Resources Referenced
 
