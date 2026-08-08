@@ -156,3 +156,32 @@ wget -c https://raw.githubusercontent.com/utada1stlove/proxy_panel/main/panel.sh
 ```
 
 The interactive menu lets you add/remove listeners and view share URLs for each proxy.
+
+---
+
+## Step 7 — Fastfetch
+
+**Why?** Fastfetch displays a concise summary of the system, kernel, CPU,
+memory, disks, and network configuration.
+
+**Install from this repository:**
+
+```bash
+curl -fLO https://raw.githubusercontent.com/utada1stlove/vps_started/main/install-fastfetch.sh
+chmod +x install-fastfetch.sh
+./install-fastfetch.sh
+```
+
+The installer uses Fastfetch's official Linux release archive, verifies its
+SHA-256 digest, and installs to `/usr/local/bin` as root or `~/.local/bin` as
+a regular user. It creates a manifest so it can safely manage only files it
+installed.
+
+```bash
+./install-fastfetch.sh update
+./install-fastfetch.sh uninstall
+./install-fastfetch.sh uninstall --purge-config
+```
+
+Use `--help` to view all options, including `--release VERSION`, `--prefix
+DIR`, and `--package-manager`.
